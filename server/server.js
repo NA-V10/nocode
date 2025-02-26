@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite:generateContent";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "AIzaSyAlqxKeY79HaO0mohqtyJZ3C4p_9lr-mjQ"; // Store API key in .env
 
 app.get('/', (req, res) => {
